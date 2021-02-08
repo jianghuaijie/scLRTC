@@ -1,7 +1,7 @@
 # scLRTC: imputation for single-cell RNA-seq data via low rank tensor completion
 
 # Usage
-if you want to run demo.
+if you want to run the demo we provide.
 STEP 1. Download the source codes and unzip the MATLAB package. Change the current directory in MATLAB to the folder containing the scripts.
 STEP 2. Open demo.m ,and click run button to get the result.
 then will generate a CSV file. in this demo it called "yanltrc.csv".(rows are genes and columns are cells)
