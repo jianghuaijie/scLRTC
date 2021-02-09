@@ -5,7 +5,7 @@ if you want to run the demo we provide.<br>
 STEP 1. Download the source codes and unzip the MATLAB package. Change the current directory in MATLAB to the folder containing the scripts.<br> 
 STEP 2. Open demo.m ,and click run button to get the result.<br> 
 then will generate a CSV file. in this demo it called "yanltrc.csv".(rows are genes and columns are cells)<br> 
-If you have not used Matlab, you can refer to guide.pdf file.<br>
+If you have not used Matlab(>=2017a), you can refer to guide.pdf file.<br>
 if you want to use other datasets,copy the csv file to this folder , change the file name and parameters in the demo.m file,click run button to get the result.
 # analysis
 In this folder, we provide part of the code for downstream analysis of single cells as a reference for quickly realizing downstream analysis of single cells.<br>
