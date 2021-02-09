@@ -12,5 +12,6 @@ In this folder, we provide part of the code for downstream analysis of single ce
 The SC3 package was downloaded from R Bioconductor (http://bioconductor.org/packages/release/bioc/html/SC3.html).<br>
 The TSCAN package was downloaded from R Bioconductor(http://www.bioconductor.org/packages/release/bioc/html/TSCAN.html).<br>
 The SEURAT package was downloaded from (https://satijalab.org/seurat/).<br>
+The splatter package was downloaded from R Bioconductor (http://www.bioconductor.org/packages/release/bioc/html/splatter.html).<br>
 # Help
 If you have any problem or question using the package please contact 201920102024@mails.zstu.edu.cn
