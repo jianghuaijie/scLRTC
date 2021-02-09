@@ -9,7 +9,7 @@ if you want to use other datasets,copy the csv file to this folder , change the 
 # analysis
 In this folder, we provide part of the code for downstream analysis of single cells as a reference for quickly realizing downstream analysis of single cells.<br>
 The SC3 package was downloaded from R Bioconductor (http://bioconductor.org/packages/release/bioc/html/SC3.html).<br>
-The TSCAN package was downloaded from R Bioconductor(http://www.bioconductor.org/packages/release/bioc/html/TSCAN.html)<br>
-The SEURAT package was downloaded from (https://satijalab.org/seurat/)<br>
+The TSCAN package was downloaded from R Bioconductor(http://www.bioconductor.org/packages/release/bioc/html/TSCAN.html).<br>
+The SEURAT package was downloaded from (https://satijalab.org/seurat/).<br>
 # Help
 If you have any problem or question using the package please contact 201920102024@mails.zstu.edu.cn
