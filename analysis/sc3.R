@@ -2,8 +2,8 @@
 #rm(list = ls())
 rm(list = ls())
 gc()
-setwd("C:/Users/jianghuaijie/Desktop/study/bioinformatics/impute/yan")
-lpsdata<-read.table("YANDATA.csv",header=T,row.names=1,sep=",",check.names=F)
+setwd("D£º/study/bioinformatics/impute/yan")
+lpsdata<-read.table("YANlrtc.csv",header=T,row.names=1,sep=",",check.names=F)
 class.label<- read.table("yanlabel.csv", header=T,sep=",",check.names=F) 
 class.label<-as.matrix(class.label)
 class.label<- class.label[,2]
@@ -18,7 +18,7 @@ opts_chunk$set(fig.align = 'center', fig.width = 6, fig.height = 5, dev = 'png')
 library(SingleCellExperiment)
 library(SC3)
 library(scater)
-ibrary(mclust)
+library(mclust)
 sce <- SingleCellExperiment(assays = list(counts = as.matrix(yan1),
                                           logcounts = log2(as.matrix(yan1)+1)),
                             colData = label)
@@ -38,7 +38,7 @@ sce <- sce[!duplicated(rowData(sce)$feature_symbol), ]
  
 sce <- sc3(sce,gene_filter = FALSE, ks =9, biology = FALSE)
 pre_label <-colData(sce)$sc3_9_clusters
-adjustedRandIndex(pre_label, label)
+ARI =adjustedRandIndex(pre_label, label)
   
 
 

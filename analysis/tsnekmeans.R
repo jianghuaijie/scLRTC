@@ -4,7 +4,6 @@ gc()
 library(devtools)
 library(mclust)
 library(Rtsne)
-# before imputation
 setwd("/Users/jianghuaijie/Desktop/study/bioinformatics/impute/uso")
 lpsdata<-read.table("uso.csv",header=T,row.names=1,sep=",",check.names=F)
 class.label<- read.table("usotruelabel.csv", header=T,sep=",",check.names=F) 

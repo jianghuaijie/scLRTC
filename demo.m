@@ -7,3 +7,4 @@ epsilon=1e-3;
 alpha= [1,1e-2,2e-3];
 rebuild =scLRTC(M0,k,p,rho,epsilon,alpha);
 csvwrite('yanltrc.csv',rebuild);
+fprintf('complete!');
