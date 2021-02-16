@@ -14,4 +14,4 @@ The TSCAN package was downloaded from R Bioconductor(http://www.bioconductor.org
 The SEURAT package was downloaded from (https://satijalab.org/seurat/).<br>
 The splatter package was downloaded from R Bioconductor (http://www.bioconductor.org/packages/release/bioc/html/splatter.html).<br>
 # Help
-If you have any problem or question using the package please contact 201920102024@mails.zstu.edu.cn
+If you have any problem or question using the package please contact lizhong@zstu.edu.cn
