@@ -11,7 +11,7 @@ If you want to use other datasets,copy the csv file to this folder , change the 
 # Downstream analysis
 We provide part of the downstream analysis code and it can be found in the "analysis" folder.<br>
 If you want to downstream analysis, you can refer to the detailed guide(manual).pdf in https://github.com/jianghuaijie/scLRTC_guide.<br>
-# usage dependences
+# Install dependences
 scLRTC is implemented in  and MATLAB(>2017a). Please install MATLAB(>2017a) before run scLRTC. 
 # Help
 If you have any problem or question using the package please contact lizhong@zstu.edu.cn
