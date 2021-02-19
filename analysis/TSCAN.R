@@ -1,7 +1,5 @@
 library(TSCAN)
-
-
-
+library(ggplot2)
 my.TSCAN =  function(count, cellLabels){
   colnames(count) = c(1:ncol(count))
   procdata <- TSCAN::preprocess(count)
@@ -17,28 +15,6 @@ my.TSCAN =  function(count, cellLabels){
   out
   #Pseudotime
 }
-
-
-log_normalization = function(x, percent=0.1, preprocess.only=FALSE){
-  
-  if (preprocess.only){
-    n <- dim(x)[2]
-    gene.exprs.count <- rowSums(x != 0)
-    x = x[gene.exprs.count > n * percent, ]
-    return(x)
-  }
-  else{
-    n <- dim(x)[2]
-    gene.exprs.count <- rowSums(x != 0)
-    x = x[gene.exprs.count > n * percent, ]
-    sf = colSums(x)/median(colSums(x))
-    return(log(sweep(x, 2, sf, '/')+1))
-    
-  }
-  
-}
-
-
 plotmclust2 <- function (mclustobj,cellLabels, x = 1, y = 2, MSTorder = NULL, show_tree = T, 
                          show_cell_names = F, cell_name_size = 3, markerexpr = NULL) 
 {
