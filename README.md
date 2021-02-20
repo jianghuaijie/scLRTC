@@ -1,7 +1,7 @@
 # scLRTC: imputation for single-cell RNA-seq data via low rank tensor completion
 scLRTC is a Matlab package for imputing for scRNA-seq.The imputed expression matrix from scLRTC can be used for as inputs for other existing scRNA-seq pipelines or tools for downstream analyses, such as cell type clustering, dimension reduction, and visualization.
 # Usage
-If want to use our program you can refer the demo we provide (https://github.com/jianghuaijie/scLRTC/blob/main/demo.m).<br>  
+If want to use our program you can refer the demo we provide (https://github.com/jianghuaijie/scLRTC/blob/main/demo.m).  
 Briefly, if you want to run the demo,<br> 
 STEP 1. Download the source codes and unzip the MATLAB package. Change the current directory in MATLAB to the folder containing the scripts.<br> 
 STEP 2. Open demo.m, and click run button to get the result.<br> 
