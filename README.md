@@ -6,7 +6,7 @@ Briefly, if you want to run the demo,<br>
 STEP 1. Download the source codes and unzip the MATLAB package. Change the current directory in MATLAB to the folder containing the scripts.<br> 
 STEP 2. Open demo.m, and click run button to get the result.<br> 
 It will generate a CSV file. In this case, it is called as "yanltrc.csv" (rows are genes and columns are cells).<br> 
-If you have not used MATLAB (version>=2017a) or R, or you want to know the detailed operation, please refer to the detailed guide(manual).pdf<br> 
+If you have not used MATLAB or R, or you want to know the detailed operation, please refer to the detailed guide(manual).pdf<br> 
 in https://github.com/jianghuaijie/scLRTC_guide.<br>
 If you want to use other datasets, copy the csv file to this folder, change the file name and parameters in the demo.m file, click run button to get the result.<br>
 # Downstream analysis
