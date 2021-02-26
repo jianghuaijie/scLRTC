@@ -5,7 +5,7 @@ scLRTC is implemented in MATLAB (version>=2017a). Please install MATLAB (>=2017a
 The downstream analysis is implemented in R (version>=3.6.2). Please install R (>=3.6.2) before running the downstream analysis.<br>
 ## Usage
 ### Preprocessing
-We recomend that user filter unwanted genes and cell before recovering raw data. By default, and perform log-transform after adding a pseudocount of 1.
+We recomend that user filter unwanted genes and cell before recovering raw data. By default,  the gene expressed in less than or equal to 3 cells is removed. And we perform log-transform after adding a pseudocount of 1.
 > Note: If there is a batch effect in the data, and the batch effect is not caused by dropout, it is recommended that the user remove the batch effect using other software such as [seurat3.0](https://satijalab.org/seurat/).
 ### Imputation
 scLRTC() is the main function to recovery scRNA-seq data. We provided demo.m file to introduce how to change the parameters used in scLRTC. Here, You’ll get to know how to use scLRTC.
