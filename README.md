@@ -20,6 +20,7 @@ Now, you should set the input file, a csv format file in which the first columns
 input_path='YANDATA.csv'; %the dir of input file;
 %the filr format should be '.csv',Cell and gene names are mandatory.
 M = readtable(input_path,'Delimiter',',','ReadRowNames',1,'ReadVariableNames',1);
+M0 = table2array(M);
 ``` 
 Then, some optional paramaters can be set as below:
 ``` matlab
