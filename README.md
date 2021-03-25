@@ -1,28 +1,28 @@
 # scLRTC: imputation for single-cell RNA-seq data via low rank tensor completion
-scLRTC is a Matlab package for imputing for scRNA-seq. The imputed expression matrix from scLRTC can be used for as inputs for other existing scRNA-seq pipelines or tools for downstream analyses, such as cell type clustering, dimension reduction, and visualization.
+scLRTC is a Matlab package for imputing for scRNA-seq. The imputed expression matrix from scLRTC can be used as inputs for other existing scRNA-seq pipelines or tools for downstream analyses, such as cell type clustering, dimension reduction, and visualization.
 ## Install dependences
 scLRTC is implemented in MATLAB (version>=2017a). Please install MATLAB (>=2017a) before running scLRTC.<br>
 The downstream analysis is implemented in R (version>=3.6.2). Please install R (>=3.6.2) before running the downstream analysis.<br>
 ## Usage
 ### Preprocessing
-We recomend that user filter unwanted genes and cell before recovering raw data. By default, the gene expressed in less than or equal to 3 cells is removed. And we perform log-transform after adding a pseudocount of 1.
-> Note: If there is a batch effect in the data, and the batch effect is not caused by dropout, it is recommended that the user remove the batch effect using other software such as [seurat3.0](https://satijalab.org/seurat/).
+We recommend that the user filters unwanted genes and cells before recovering raw data. By default, the gene expressed in less than or equal to 3 cells is removed. And we perform log-transform after adding a pseudocount of 1.
+> Note: If there is a batch effect in the data, and the batch effect is not caused by dropout, it is recommended that the user removes the batch effect using other software such as [seurat3.0] (https://satijalab.org/seurat/).
 ### Imputation
-scLRTC() is the main function to recovery scRNA-seq data. We provided demo.m file to introduce how to change the parameters used in scLRTC. Here, You’ll get to know how to use scLRTC.
-Initially, Begin by cleaning up the matlab environment:
+scLRTC() is the main function to recovery scRNA-seq data. We provided demo.m file to introduce how to change the parameters used in scLRTC. Here, you’ll get to know how to use scLRTC.
+Initially, it begins by cleaning up the Matlab environment:
 ``` matlab
 clc;
 clear;
 close all;
 ```
-Now, you should set the input file, a csv format file in which the first columns stores the gene names and the first row the cell names mandatorily.
+You need to set the input file, a csv format file in which the first columns stores the gene names and the first row the cell names mandatorily.
 ``` matlab
 input_path='YANDATA.csv'; %the dir of input file;
 %the filr format should be '.csv',Cell and gene names are mandatory.
 M = readtable(input_path,'Delimiter',',','ReadRowNames',1,'ReadVariableNames',1);
 M0 = table2array(M);
 ``` 
-Then, some optional paramaters can be set as below:
+Then, some optional parameters can be set as below:
 ``` matlab
 k=5;
 %Construct the size of the third-order low-rank tensor
@@ -35,11 +35,11 @@ epsilon=1e-2;
 alpha= [1,1e-2,2e-3];
 %the coefficient of the objective function, i.e., \|X\|_* := \alpha_i \|X_{i(i)}\|_*
 ```
-Now, the thing you have to do is to invoke the scLRTC() function.
+Now, the thing you have to do is to invoke the scLRTC( ) function.
 ``` matlab
 rebuild =scLRTC(M0,k,p,rho,epsilon,alpha);
 ```
-The last thing you have to do is to save the result of imputation.
+Finally, you need to save the result of imputation.
 ``` matlab
 output_path ='yanltrc.csv';
 %the dir of output file
